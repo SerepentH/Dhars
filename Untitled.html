@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>For Someone Special ❤️</title>
+<style>
+body{margin:0;font-family:'Segoe UI',sans-serif;background:linear-gradient(135deg,#ff9a9e,#fad0c4);color:#fff;text-align:center}
+.card{max-width:700px;margin:40px auto;padding:30px;border-radius:25px;background:rgba(255,255,255,0.15);backdrop-filter:blur(12px);box-shadow:0 10px 30px rgba(0,0,0,0.2)}
+h1{font-size:2.5em;margin-bottom:10px}
+button{background:#fff;color:#ff4b6e;border:none;padding:12px 20px;border-radius:20px;font-size:1em;cursor:pointer;margin-top:20px;transition:0.25s}
+button:hover{transform:scale(1.1)}
+.hidden{display:none}
+.photo{width:100%;border-radius:20px;margin-top:15px}
+.heart{font-size:2em;animation:beat 1s infinite}
+@keyframes beat{0%,100%{transform:scale(1)}50%{transform:scale(1.2)}}
+</style>
+</head>
+<body>
+<div class="card">
+<h1>Hey Dharikaa Naveen Singh 💌</h1>
+<p>I made something small just for you...</p>
+<button onclick="nextStep()">Open it</button>
+
+
+<div id="step1" class="hidden">
+<h2>You wanna know why I like you?</h2>
+<p>• You are the most annoying creature on this planet</p>
+<p>• You are the most adorable chubby marshmellow pie </p>
+<p>• And last but not least, You bring out the best of me</p>
+<button onclick="showLetter()">One more thing...</button>
+</div>
+
+
+<div id="letter" class="hidden">
+<h2>A Note For You</h2>
+<p>
+From the random conversations to the small moments,
+you've become one of my favorite parts of the day.
+I just wanted to remind you that you matter to me a lot ❤️
+</p>
+<button onclick="showPhoto()">Last surprise</button>
+</div>
+
+
+<div id="photoSection" class="hidden">
+<h2>Us 📸</h2>
+<img class="photo" src="your-photo.jpg" alt="Our Memory">
+<p class="heart">Happy Valentine's Day ❤️</p>
+</div>
+</div>
+
+
+<script>
+function nextStep(){document.getElementById('step1').classList.remove('hidden');}
+function showLetter(){document.getElementById('letter').classList.remove('hidden');}
+function showPhoto(){document.getElementById('photoSection').classList.remove('hidden');}
+</script>
+</body>
+</html>
